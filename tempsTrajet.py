@@ -43,5 +43,5 @@ wsgi_application = WsgiApplication(application)
 
 if __name__ == '__main__':
     from wsgiref.simple_server import make_server
-    server = make_server('127.0.0.1', 8000, wsgi_application)
+    server = make_server('0.0.0.0', 8000, wsgi_application)
     server.serve_forever()
